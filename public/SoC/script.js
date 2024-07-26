@@ -1,34 +1,49 @@
+const rocket = document.querySelector('#rocket')
+const sky = document.querySelector('#sky')
+const ex = document.querySelector('#exhaust')
+var bottom = 0
+var last_y = 0
+var wheel;
 
-// linear
+window.addEventListener('wheel', function(e){
+  wheel = e.deltaY
+})
 
-// Get the rocket image element
-// const rocketImg = document.getElementById('rocket-img');
+window.addEventListener('scroll', function(e){
+  var h = window.innerHeight
+  var y = document.documentElement.scrollTop
+  var doc = document.body.offsetHeight -250
+  var perc = y / (doc - h)
+  // console.log(perc)
 
-// // Add an event listener to the window's scroll event
-// window.addEventListener('scroll', () => {
-//   // Get the current scroll position
-//   const scrollPosition = window.scrollY;
+  if(perc < 1){
+    sky.style.bottom = -1*(perc)*100 + '%'    
+  }  
 
-//   // Move the rocket up as the user scrolls
-//   rocketImg.style.bottom = `${100 - (scrollPosition / 10)}%`;
+  if(perc > 0) {
+    rocket.classList.add('shake_rocket')
+    ex.classList.add('exhaust')
+  } else {
+    rocket.classList.remove('shake_rocket')
+    ex.classList.remove('exhaust')
+  }
+  
+  if(perc > .37) {
+    ex.classList.remove('exhaust')
+  }
 
-//   // Add a transition effect to make the movement smooth
-//   rocketImg.style.transition = 'bottom 0.5s ease-in-out';
-// });
+  if(perc > .25) {
+    bottom = (perc - .25)*133
+  }
+  
+  if(perc > 0) {
+    bottom = (perc - .25)*133
+    if(perc - .25 < 0) {
+      bottom = 0
+    }
+  }
+  rocket.style.bottom = bottom + '%'
 
-
-// curve path 
-const rocketImg = document.getElementById('rocket-img');
-
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
-  const curve = `cubic-bezier(0.15, 0.36, 0.45, 0.94)`; // adjust the curve to your liking
-  const rocketTop = `${100 - (scrollPosition / 10)}%`;
-  const rocketLeft = `${(scrollPosition / 10) * 1}%`; // adjust the multiplier to control the curve
-
-  rocketImg.style.top = rocketTop;
-  rocketImg.style.left = rocketLeft;
- 
-  rocketImg.style.transition = `top 0.5s ${curve}, left 0.2s ${curve}`;
-});
+  last_y = y
+})
 
