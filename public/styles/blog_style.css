@@ -1,0 +1,98 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: cursive, sans-serif;
+  background-image: linear-gradient(to bottom, #d1ae90 0%, #d7a072 38%, #d7a072 68%, #d8843f 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+p{
+ font-size: 18px;
+}
+#title{
+  font-family: cursive, sans-serif;
+  margin: 5px;
+  font-size: 60px;
+  font-weight: lighter;
+}
+h4{
+  font-family: cursive, sans-serif;
+  margin: 0px;
+  font-size: 20px;
+}
+.blog-content{
+display: flex;
+flex-direction: column;
+position: relative;
+margin-top: 100px;
+padding-bottom: 20px;
+}
+.topbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.middlebody{
+display: grid;
+grid-template-columns: 1fr 4fr 1fr;
+}
+.box {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.884);
+}
+
+.article {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgba(0, 0, 0, 0.304);
+  color: #d4d4d4f5;
+  padding: 10px;
+  transition: background-color 0.5s, color 0.5s;
+  cursor: pointer;
+}
+
+.article.clicked {
+  background-color: rgba(69, 19, 19, 0.289);
+  color: #000000;
+  
+}
+
+.date {
+  color: rgb(95, 6, 6);
+}
+.article.clicked .date {
+  color: rgb(239, 239, 239);
+}
+
+.name {
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
+  text-align: center;
+}
+.cont {
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+#vanta-footer {
+  width: 100%;
+  height: 200px;
+ 
+}
+@media (max-width:932px) {
+  .middlebody{
+    display: grid;
+    grid-template-columns: 0.25fr 3.5fr 0.25fr;
+    }
+  }

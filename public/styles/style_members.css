@@ -1,0 +1,206 @@
+
+.list {
+    position: relative;
+    top:120px;
+    display: flex;
+   justify-content: space-around;
+   z-index: 2;
+  }
+  
+  .middle-body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 105vh;
+  
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+  .default-content {
+      position: absolute;
+      top: 120px;
+      display: flex;
+  
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ff000000;
+      background-color: #ffffff00;
+      border-radius: 15px;
+      max-width: 100%; /* Adjust width as needed */
+      margin: auto;
+      color:white;
+  }
+
+  .default-content2 {
+    padding: 40px;
+    border: 1px solid #cccccc00;
+    background-color: #ffffff00;
+    border-radius: 15px;
+    font-size: 20px;
+     /* Adjust width as needed */
+   
+  }
+  .ftitle
+  {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  }
+  #invite{
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  #register {
+    margin: 10px;
+    padding: 0;
+    height: 70px;
+    width: 70px;
+    top: -50px;
+    right: 50px;
+    font-size: 30px;
+    color: red;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+.tooltip {
+    visibility: hidden; /* Hide tooltip by default */
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    position: absolute;
+    left: -50%;
+    top:50px;
+
+}
+
+#register:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+  .transparent-button {
+      background-color: transparent;
+      border: 2px solid #33333300;
+      color: #8c8c8c;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .transparent-button:hover {
+      background-color: #33333300;
+      color: #fff;
+  }
+  
+  .members-list {
+      position: absolute;
+      display: none;
+      top:110px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      text-align: center;
+      justify-items: center;
+      z-index: 2;
+      background-color: #132228b7;
+      border-radius: 10px;
+  }
+  
+  .member {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .member:hover {
+      transform: scale(1.05);
+      background-color: #8c8c8c;
+      color: #fff;
+  }
+  
+
+  .ccpc-no {
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+  }
+
+  #starfield{
+      z-index: 1;
+      background-color: black;
+  }
+ 
+  
+  @media (max-width:932px) {
+      .members-list {
+        position: absolute;
+        display: none;
+        top:110px;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        justify-items: center;
+        z-index: 2;
+        background-color: #132228b7;
+        border-radius: 10px;
+    }
+    .register{
+
+        left:85%;
+        top:90%;
+      }
+      #invite{
+        font-size: 25px;
+        margin-bottom: 5px;
+      }
+      #register{
+        margin:0px;
+        padding:0px;
+        color:red;
+      }
+      .middle-body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: calc(105vh);
+      
+      }
+      footer{
+        margin-top: 90%;
+      }
+}
+
+#vanta-footer{
+display: block;
+position: absolute;
+z-index: 1;
+width: 100%;
+height: 200px;
+}
+.member-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+

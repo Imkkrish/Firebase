@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="main-content">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://unpkg.com/vanta/dist/vanta.clouds.min.js"></script>  
+    <title>CcpC-Blogs</title>
+    <link rel="icon" type="image/x-icon" href="img/CcpC.png">
+    <link rel="stylesheet" href="styles/blog_style.css">
+    <link rel="stylesheet" href="styles/styles.css">	
+
+</head>
+</head>
+<body>
+    <div id="mainContent" class="cont">
+        <!-- Navigation buttons -->
+        <div class ="navbar "><!-- Fixed Navigation Bar all buttons on right side-->
+            <div class="svg-container">
+                <img src="img/navlogo.svg" alt="Logo" id="mySVG">
+                <div id="output">
+                    <span id="word"></span>
+                </div>
+            </div>
+            <div class ="navright">
+                <div class="searchBox">
+                    <input class="searchInput"type="text" name="" placeholder="Search...">
+                    <i class="fas fa-search" onclick="toggleSearch"></i>
+                </div>
+                <!-- Desktop view navigation -->
+                <div class="nav-desktop ">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="event.html">Events</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="members.html">Members</a>
+                    <a href="mailto:codecrafter.cuj@gmail.com">Reach Us</a>
+                
+                </div>
+                <!-- Responsive view navigation -->
+                <div class="nav-responsive" id="myNav">
+                    <a href="index.html">Home</a>
+                    <a href="event.html">Events</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="members.html">Members</a>
+                    <a href="mailto:codecrafter.cuj@gmail.com">Reach Us</a>
+                </div>
+                <div class="container" onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-content">
+            <div class="topbody">
+                <h1 id="title">Blogs</h1>
+                <h4>A way close to observe!</h4>
+            </div>
+            <div class="middlebody">
+                <div class="Left-column">
+                </div>
+                <div class="middle-section"><!-- Right column for display for events-->
+                    <div class="box" id="160524"><!--The First Blog doesnt require id-->
+                        <article class="article" onclick="toggleColor(this)">
+                            <h1>Computer Graphics & Future Outlook</h1>
+                            <span class="date">Date: May 16, 2024<br>18 people attended <br>CCPC Meeting Hall </span><br><br>
+                            <p>The Code Crafter Programming Club hosted an introduction to computer graphics on May 16. Twenty-five people who were eager to learn and make something new showed up for the session. The fundamentals of graphic design software and methods for producing eye-catching digital art were covered in the workshop. An introduction to computer graphics, OPENGL, and their applications in the modern world opens the session. Mr. Om Vishesh installed Microsoft Visual Studio 2022 and OPENGL following the session using C++and how to import libraries like glw 32. Subsequently, Mr. Priyanshu Verma demonstrated to us how to install OpenGL in Python by using basic command prompt phrases, such as Glfw pyopengl and Pygame. Mr. Priyasnshu Verma showcased two 3D cube projects for us and gave us building instructions. Within a month, the members hope to offer some future activities to help all CCPC members learn the fundamentals of OPENGL. The main objective of the programme is to familiarise all members with the basics of OPENGL and provide them with the necessary skills to create their own 3D projects. Additionally, the programme aims to encourage collaboration and creativity among members in exploring the capabilities of OPENGL for future projects.
+                                <span class="name">~Apurba Das</span>
+                            </p>
+                        </article>
+                    </div>
+                    <div class="box" id="010324">
+                        <article class="article" onclick="toggleColor(this)">
+                            <h1>GitHub basics and Collaborative coding</h1>
+                            <span class="date" >Date: March 1, 2024<br>20 people attended<br>CCPC Meeting Hall </span><br><br>
+                            <p>On March 1, 2024, the Code Crafter Programming Club organized a GitHub basics and
+                                collaborative coding session for its members. The session was attended by 20 people who
+                                wanted to learn more about GitHub and its features. The main objective of the session was to
+                                expose and familiarize the participants to GitHub and its collaborative coding techniques. The
+                                session started with a welcome and introduction by Mr. Aditya Singh Chandel, followed by a
+                                presentation by Mr. Abhimaan on GitHub and version control systems. He explained the
+                                importance of collaborative coding and how to use repositories for different projects. Next,
+                                Mr. Krish showed us how to create a GitHub account, link it to our student ID, and access the
+                                student developer pack. He also demonstrated how to create a repository, collaborate with
+                                others, and deploy different versions of our pages. The club coordinators were very helpful and
+                                answered our questions throughout the session. The session was very informative. At the end,
+                                we were given a task to create a contact card in GitHub with our basic contact details and deploy
+                                it online.
+                                <span class="name">~Basil Joy</span>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="vanta-footer" style="width: 100%; height: 200px;">
+            <div class="contact">
+                <div class="contact-us">
+                    <div class="social-connection"><!--Section for social media connect as column grid-->
+                        <a href="https://www.linkedin.com/company/codecraftercuj/" target="_blank" class="social-link linkedin" alt="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ccpc_cuj/" target="_blank" class="social-link instagram" alt="instagram">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/CcpC-cuj" target="_blank" class="social-link github" alt="github">
+                        <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto:codecrafter.cuj@gmail.com" target="_blank" alt="ccpc"> codecrafter.cuj@gmail.com</a>
+                    </div>
+                </div>
+                <div class="locate">
+                <div class="University"><!--Section for University connection as column grid -->
+                    <a href="https://cuj.ac.in/" target="_blank" alt="cujlogo">
+                    <img src="img/cujlogo.png"></img> </a>
+                </div>
+                <div class="DCSE">
+                    <a href="https://cuj.ac.in/DCSE/CS&Edepartment.php" target="_blank" alt="DCSE"> DCSE|CUJ </a>
+                </div>
+                <div class="address">
+                    <p><a herf="https://maps.app.goo.gl/Tk98gtKRbtGkTqhY6">Academic Block 1<br>Central University of Jharkhand,<br>Ranchi, Jharkhand,India - 835222</a></p>
+                </div>
+                </div>
+            </div>
+            <div class="footer-credit">
+                <div class="copyright"><!--Copyright section at bottom as row grid-->
+                    <p>&copy; 2024 CcpC - Central University of Jharkhand</p>
+                </div>
+                <div class="credit" >
+                    Design & Developed by <a href="https://www.linkedin.com/in/krish-kumar-82a21b256" target="_blank" alt="krish"> &nbsp;&nbsp;Krish Kumar</a>&nbsp;&nbsp;& &nbsp;&nbsp;<a href="https://github.com/apurbasbjk30" target="_blank" alt="apurba"> Apurba Das</a>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+    <script src="script/script.js"></script>
+    <script>
+        function toggleColor(element) {
+        element.classList.toggle('clicked');
+        }
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            VANTA.CLOUDS({
+                el: "#vanta-footer",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                backgroundColor: 0x0,
+                skyColor: 0xd3894c,
+                speed: 0.80
+            })
+        });
+        </script>
+</body>
+</html>
+

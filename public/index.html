@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="main-content">
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YJKKXNZVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9YJKKXNZVC');
+</script>
+
+<meta name="google-site-verification" content="NtQsocGZyuwyySE6mhcImu0S7SuZahbOiIWdv7eqDUY" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Welcome to the Coding Club Programming Club (CCPC) at the Central University of Jharkhand. Join us to enhance your programming skills, participate in coding events, and collaborate with fellow enthusiasts.">
+<meta name="keywords" content="CCPC, CUJ, Central University of Jharkhand, Coding Club, Programming Club, Coding Events, Programming Skills, CUJ Coding Club">
+<meta name="author" content="CCPC, Central University of Jharkhand">
+<meta property="og:title" content="CCPC - Central University of Jharkhand Coding Club">
+<meta property="og:description" content="Join the Code Crafter Programming Club (CCPC) at the Central University of Jharkhand to improve your programming skills and participate in exciting coding events.">
+<meta property="og:url" content="https://ccpc-cuj.web.app/">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://unpkg.com/vanta/dist/vanta.clouds.min.js"></script>  
+<title>CcpC</title>
+<link rel="icon" type="image/x-icon" href="img/CcpC.png">
+<link rel="stylesheet" href="styles/styles_index.css">
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/10.12.3/firebase-app-compat.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/10.12.3/firebase-auth-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-database-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-firestore-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-functions-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-messaging-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-storage-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-analytics-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-remote-config-compat.js"></script>
+<script defer src="/__/firebase/10.12.3/firebase-performance-compat.js"></script>
+<!-- 
+    initialize the SDK after all desired features are loaded, set useEmulator to false
+    to avoid connecting the SDK to running emulators.
+-->
+<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+</head>
+<body>
+    <div id="mainContent" class="cont">
+        <!-- Navigation buttons -->
+        <div class ="navbar "><!-- Fixed Navigation Bar all buttons on right side-->
+            <div class ="navright">
+                <div class="searchBox">
+                    <input class="searchInput"type="text" name="" placeholder="Search...">
+                    <i class="fas fa-search" onclick="toggleSearch()"></i>
+                </div>
+                <!-- Desktop view navigation -->
+                <div class="nav-desktop ">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="event.html">Events</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="members.html">Members</a>
+                    <a href="mailto:codecrafter.cuj@gmail.com" alt="reach us">Reach Us</a>
+                </div>
+                <!-- Responsive view navigation -->
+                <div class="nav-responsive" id="myNav">
+                    <a href="index.html" alt="home">Home</a>
+                    <a href="event.html" alt="event">Events</a>
+                    <a href="projects.html" alt="project">Projects</a>
+                    <a href="blogs.html" alt="blog">Blogs</a>
+                    <a href="members.html" alt="member">Members</a>
+                    <a href="mailto:codecrafter.cuj@gmail.com" alt="reach us">Reach Us</a>
+                </div>
+                    <div class="container" onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="svg-container">
+            <img src="img/logo.svg" alt="Logo" id="mySVG">
+            <div id="output">
+                <span id="word"></span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content0">
+                <canvas id="starfield"></canvas>
+            </div>
+            <div class="content1">
+                <div class="left1">
+                    <div class="circle-container">
+                        <div class="dotted-circle">
+                            <div class="small-circle circle3"><!--2nd circle-->
+                                <div class="circle-obj">
+                                    <span id="CcpC">C</span>
+                                </div>
+                            </div>
+                            <div class="small-circle circle2"> <!--1st circle-->
+                                <div class="circle-obj">
+                                    <span id="CcpC">C</span>
+                                </div>
+                            </div>
+                            <div class="small-circle circle1"><!--3rd circle-->
+                                <div class="circle-obj">
+                                    <span id="CcpC">P</span>
+                                </div>
+                            </div>
+                            <div class="small-circle circle4"><!--4th circle-->
+                                <div class="circle-obj">
+                                    <span id="CcpC">C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="box-detail-C1">
+                        <h2>Contrivance</h2>
+                        <p id="right1"> With the aid of the skills we gain from technology, we have the ability to create and transform society.</p>
+                    </div>
+                    <div class="box-detail-c">
+                        <h2>Creative</h2>
+                        <p id="right1">
+                        We create beyond human imagination.Our team is dedicated to pushing boundaries and thinking outside the box to deliver exceptional results.
+                        </p>
+                    </div>
+                    <div class="box-detail-p">
+                        <h2>Passion</h2>
+                        <p id="right1">
+                        We have passion for creating innovative solutions that make a positive impact on people's lives.
+                        </p>
+                    </div>
+                    <div class="box-detail-C2">
+                        <h2>Co-operation</h2>
+                        <p id="right1"> We co-operate with team members to achieve our common goals and ensure success in our projects. Effective communication and collaboration are key to our teamwork.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="left2">
+                    <div id="slideshow-container">
+                        <a href="blogs.html#010324" alt="blog-1">
+                        <div id="slideshow">
+                            <div class="slide-container">
+                                <img src="img/img1.jpg" class="slide"  alt="github-1"/>
+                                <div class="overlay">GitHub Session</div>
+                            </div>
+                            <div class="slide-container">
+                                <img src="img/img2.jpg" class="slide"  alt="github-2"/>
+                                <div class="overlay">GitHub Session</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="blogs.html#160524" alt="blog-2">
+                        <div id="slideshow">
+                            <div class="slide-container">
+                                <img src="img/img3.jpg" class="slide" alt="graphic-1"/>
+                                <div class="overlay">Computer Graphics & Future Outlook</div>
+                            </div>
+                            <div class="slide-container">
+                                <img src="img/img4.jpg" class="slide" alt="graphic-2" />
+                                <div class="overlay">Computer Graphics & Future Outlook</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="right2 add-flex">
+                    <div class="event-box add-flex ">
+                        <h2 id="Event">Upcoming Event</h2>
+                        <div class="details">
+                            <p id="right2" style="font-weight: bold;">SoC</p>
+                            <p id="right2">Date: 25th July 2024</p>
+                            <p id="right2">Time: 11:30 AM</p>
+                            <p id="right2">Venue: Offline, Room No. 327</p>
+                            <p id="right2">Discover the latest challenges in coding!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="left3">
+                    <div class="Soc-detail1 add-flex">
+                        <h1 id="soc">What is SoC?</h1>
+                    </div>
+                    <div class="SoC-Ans  add-flex">
+                        <p id="left3">SoC succinctly conveys the essence of coding activities across different seasons, organizing projects and events accordingly.</p>
+                    </div>
+                    <div class="Soc-detail1 add-flex">
+                        <h1 id="soc">Why SoC?</h1>
+                    </div>
+                    <div class="SoC-Ans  add-flex">
+                        <p id="left3">SoC optimizes coding engagement by aligning projects with the unique opportunities each season offers.</p>
+                    </div>
+                    <div class="Soc-detail1 add-flex">
+                        <h1 id="soc">When SoC?</h1>
+                    </div>
+                    <div class="SoC-Ans  add-flex">
+                        <p id="left3">SoC events occur throughout the year, adapting coding initiatives to the specific characteristics of each season, including autumn</p>
+                    </div>
+                </div>
+                <div class="right3">
+                <a href="#">
+                </a>
+            </div>
+            </div>
+            <div class="content4">
+                <div class="left4">
+                <!-- Student body-->
+                    <div class="Studentbody">
+                        <h1 style="margin-bottom: 20px; font-family:monospace;">Student Body</h1>
+                        <div class="image-frame">
+                            <img src="img/Soumya.png" class="top-left1-image" alt="Soumya" onclick="displayDetail('Soumya')">
+                            <img src="img/Sandeep.png" class="top-right1-image" alt="Sandeep" onclick="displayDetail('Sandeep')">
+                            <img src="img/Om.png" class="top-left2-image" alt="OM" onclick="displayDetail('Om')">
+                            <img src="img/Apurba.png" class="top-right2-image" alt="Apurba" onclick="displayDetail('Apurba')">
+                            <img src="img/Reyaz.png" class="bottom-right2-image" alt="Reyaz" onclick="displayDetail('Reyaz')">
+                            <img src="img/AdityaSC.png" class="bottom-left1-image" alt="AdityaSC" onclick="displayDetail('AdityaSC')">
+                            <img src="img/Priyanshu.png" class="bottom-right1-image" alt="Priyanshu" onclick="displayDetail('Priyanshu')">
+                            <img src="img/Abhimaan.png" class="bottom-left2-image" alt="Abhimaan" onclick="displayDetail('Abhimaan')">
+                            <img src="img/Krish.png" class="center-bottom-image" alt="Krish" onclick="displayDetail('Krish')">
+                        </div>
+                    </div>
+                </div>
+                <div class="right4">
+                    <div class="terminal-header">
+                        <div class="button red"></div>
+                        <div class="button yellow"></div>
+                        <div class="button green"></div>
+                    </div>
+                    <div class="terminal-body">
+                        <span id="studentbody" class="terminal"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+        <div id="vanta-footer" style="width: 100%; height: 200px;">
+            <div class="contact">
+                <div class="contact-us">
+                    <div class="social-connection"><!--Section for social media connect as column grid-->
+                        <a href="https://www.linkedin.com/company/codecraftercuj/" target="_blank" class="social-link linkedin" alt="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ccpc_cuj/" target="_blank" class="social-link instagram" alt="instagram">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/CcpC-cuj" target="_blank" class="social-link github" alt="github">
+                        <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto:codecrafter.cuj@gmail.com" target="_blank" alt="ccpc"> codecrafter.cuj@gmail.com</a>
+                    </div>
+                </div>
+                <div class="locate">
+                <div class="University"><!--Section for University connection as column grid -->
+                    <a href="https://cuj.ac.in/" target="_blank" alt="cujlogo">
+                    <img src="img/cujlogo.png" alt="CUJ Logo"></img> </a>
+                </div>
+                <div class="DCSE">
+                    <a href="https://cuj.ac.in/DCSE/CS&Edepartment.php" target="_blank" alt="DCSE"> DCSE|CUJ </a>
+                </div>
+                <div class="address">
+                    <p> <a herf="https://maps.app.goo.gl/Tk98gtKRbtGkTqhY6">Academic Block 1<br>Central University of Jharkhand,<br>Ranchi, Jharkhand,India - 835222</a></p>
+                </div>
+                </div>
+            </div>
+            <div class="footer-credit">
+                <div class="copyright"><!--Copyright section at bottom as row grid-->
+                    <p>&copy; 2024 CcpC - Central University of Jharkhand</p>
+                </div>
+                <div class="credit" >
+                    Design & Developed by <a href="https://www.linkedin.com/in/krish-kumar-82a21b256" target="_blank" alt="krish"> &nbsp;&nbsp;Krish Kumar</a>&nbsp;&nbsp;& &nbsp;&nbsp;<a href="https://github.com/apurbasbjk30" target="_blank" alt="apurba"> Apurba Das</a>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <script src="script/starfield.js"></script>
+    <script src="script/script_index.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            VANTA.CLOUDS({
+                el: "#vanta-footer",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                backgroundColor: 0x0,
+                skyColor: 0x0,
+                speed: 0.80
+                })
+            });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+ html, body {
+	 height: 100%;
+}
+ body {
+	 font-family: 'Open Sans', sans-serif;
+	 display: flex;
+	 flex-direction: column;
+	 padding-top: 300px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 300px;
+    padding: 3rem 0;
+    color: #ffffff;
+    background: #000;
+    margin-top: auto;
+}
+
+ @keyframes parralax {
+	 0% {
+		 background-position: 260px;
+	}
+	 100% {
+		 background-position: -10000vw;
+	}
+}
+
+ @keyframes moto {
+	 0% {
+		 transform: translateY(0) rotate(0);
+	}
+	 5% {
+		 transform: translateY(0) rotate(-5deg);
+	}
+	 25% {
+		 transform: translateY(60px) rotate(-20deg);
+	}
+	 49% {
+		 transform: translateY(0) rotate(-1deg);
+	}
+	 51% {
+		 transform: translateY(0) rotate(1deg);
+	}
+	 75% {
+		 transform: translateY(60px) rotate(20deg);
+	}
+	 80% {
+		 transform: translateY(60px) rotate(0deg);
+	}
+	 98% {
+		 transform: translateY(0) rotate(0);
+	}
+}
+ @keyframes voiture {
+	 0% {
+		 transform: rotate(0);
+	}
+	 25% {
+		 transform: rotate(-5deg);
+	}
+	 50% {
+		 transform: rotate(0);
+	}
+	 75% {
+		 transform: rotate(5deg);
+	}
+	 100% {
+		 transform: rotate(0);
+	}
+}
+
+ .footer__parralax {
+	 position: absolute;
+	 left: 0;
+	 top: -300px;
+	 height: 300px;
+	 width: 100%;
+	 overflow: hidden;
+}
+ .footer__parralax-premierplan {
+	 background-position: 260px;
+}
+ .footer__parralax-trees, .footer__parralax-premierplan{
+	 position: absolute;
+	 inset: 0;
+	 background-repeat: repeat-x;
+	 background-position-y: 100% !important;
+	 animation: parralax 600s linear infinite;
+}
+ .footer__parralax-moto {
+	 position: absolute;
+	 bottom: 80px;
+	 left: 50%;
+	 margin-left: -250px;
+	 height: 200px;
+	 width: 150px;
+	 background: url("../img/bike.gif");
+	 background-repeat: no-repeat;
+	 transform-origin: 50% 80%;
+	 animation: moto 5s linear infinite;
+}
+ .footer__parralax-voiture {
+	 position: absolute;
+	 bottom: 10px;
+	 left: 50%;
+	 margin-left: 250px;
+	 height: 114px;
+	 width: 206px;
+	 background: url("../img/car.gif");
+	 background-repeat: no-repeat;
+	 animation: voiture 1s linear infinite;
+}
+
+ .footer__parralax-trees {
+	 background-image: url("../img/trees.png");
+	 bottom: -60px;
+	 animation-duration: 1000s;
+}
+ .footer__parralax-premierplan {
+	 background-image: url("../img/curve-path.png");
+	 animation-duration: 500s;
+}
