@@ -379,8 +379,16 @@ h2{
   padding-left:25px;
   margin-right: 10px;
 }
-.content2{
+.admin{
   margin: 0px 0px 15px 15px;
+  display: grid;
+  background-color: white;
+  background-image: linear-gradient(to right white 0%, black 100%);
+  height: 100%;
+  grid-template-columns: 1fr;
+}
+.content2{
+  margin: 0px 15px 0px 0px ;
   background-image: linear-gradient(to right, #fdae7a 0%, #efbf38 40%, #e08600 60%);
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -444,7 +452,7 @@ align-items: center;
 justify-content: center;
 }
 .content3{
-margin: 0px 15px 0px 0px ;
+margin:15px 0px 15px 15px ;
 background-image: linear-gradient(-45deg, #EA4335 0%, #FBBC05 50%, #34A853 75%, #4285F4 100%);
 display: grid;
 grid-template-columns: 1.5fr 1fr;
@@ -510,7 +518,7 @@ margin: 5px;
 display: grid;
 grid-template-columns: 3fr 1fr;
 background-image: linear-gradient(to top,#f0ede5 0%, #ffbdd1 100%);
-margin:15px 0px 15px 15px ;
+margin:0px 15px 15px 0xpx ;
 }
 .left4{
 padding: 20px;
