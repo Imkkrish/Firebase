@@ -118,22 +118,21 @@
       position: absolute;
       top: 55%;
       left: -50%;
-      background: 
-        radial-gradient(circle at 50% 100%, transparent 50%, firebrick 51%);
-      clip-path: polygon(0% 0%, 25% 0%, 25% 100%, 75% 100%, 75% 0%, 100% 0%, 100% 100%, 0% 100%);
-      border-radius: 100% 100% 0 0;
+      background: radial-gradient(circle at 50% 100%, transparent 50%, firebrick 51%);
+  clip-path: polygon(0% 0%, 25% 0%, 25% 100%, 75% 100%, 75% 0%, 100% 0%, 100% 100%, 0% 100%);
+  border-radius: 100% 100% 0 0;
     }
     #rocket:after {
       content:'';
-      width: 60%;
+      width: 70%;
       height: 25%;
       position: absolute;
       top: 108%;
-      left: 20%;
+      left: 15%;
       background:
         linear-gradient(to bottom, orangered, gold);
       border-radius: 0 0 25% 25%;
-      filter: blur(2px);
+      filter: blur(1px);
       opacity: .5;
       animation: blast_off .25s linear infinite;
     }
