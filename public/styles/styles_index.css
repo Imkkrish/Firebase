@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(0, 0, 0);
 }
 .svg-container {
   position: fixed;
@@ -37,7 +37,7 @@ background-color: #000000;
   left:0;
   margin: 0px 15px 15px 0px ;
   grid-template-columns: 0.5fr 1fr;
-  background-image: linear-gradient(45deg, #fa709a 0%, #fee140 70%, #d3fd4b80 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 40%, #d3fd4b80 70%, #00000080 100%);
 
 }
 .scrolled-up .svg-container {
@@ -443,7 +443,7 @@ margin-top: 40px;
 }
 .content2{
   margin: 0px 15px 0px 0px ;
-  background-image: linear-gradient(to right, #fdae7a 0%, #efbf38 40%, #e08600 60%);
+  background-image: linear-gradient(to right,#e08600 0%, #aa4c0a 40% , #000000 100%);
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -490,7 +490,6 @@ padding: 5px 10px; /* Adjust padding as needed */
 border-radius: 0 9px 0 0px; /* Rounded corners */
 }
 .right2{
-background-image: linear-gradient(to right,#e08600 0%, #aa4c0a 40% , #673a12 100%);
 }
 .event-box{
 background-color: #e297ae;
@@ -507,7 +506,7 @@ justify-content: center;
 }
 .content3{
 margin:15px 0px 15px 15px ;
-background-image: linear-gradient(-45deg, #EA4335 0%, #FBBC05 50%, #34A853 75%, #4285F4 100%);
+background-image: linear-gradient(to left, #EA4335 25%, #FBBC05 45%, #34a853bb 65%, #4286f4cb 90%, #0000007b 100%);
 display: grid;
 grid-template-columns: 1.5fr 1fr;
 
@@ -571,7 +570,7 @@ margin: 5px;
 .content4{
 display: grid;
 grid-template-columns: 3fr 1fr;
-background-image: linear-gradient(to top,#f0ede5 0%, #ffbdd1 100%);
+background-image: linear-gradient(to top,#000000 0%, #ffbdd1 100%);
 margin:0px 15px 15px 0px ;
 }
 .left4{
@@ -1043,8 +1042,6 @@ margin-bottom: 20px;
 }
 .content2{
 margin: 0px 15px 0px 0px ;
-background-image: linear-gradient(to right,#fdae7a 0%, #efbf38 20%, #e08600 50%);
-display: grid;
 grid-template-columns: 1.5fr 1fr;
 }
 #slideshow-container {
@@ -1075,8 +1072,6 @@ position: relative; /* Ensure relative positioning for absolutely positioned ele
 .content3{
 
 margin: 15px 0px 15px 15px;
-background-image: linear-gradient(-45deg, #EA4335 0%, #FBBC05 50%, #34A853 75%, #4285F4 100%);
-display: grid;
 grid-template-columns: 1fr 1fr;
 }
 .right3 img{
@@ -1118,8 +1113,7 @@ font-size: 20px;
 }
 .content4 {
 display: flex;
-grid-template-columns: 1fr;
-background-image: linear-gradient(to top, #999999 0%, #999999 20%, #ffbdd1 100%);
+background-image: linear-gradient(to top,#000000 0%, #ffbdd1 100%);
 
 margin:0px 15px 15px 0px ;
 flex-direction: column;
