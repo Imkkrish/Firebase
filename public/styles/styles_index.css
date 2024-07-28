@@ -382,10 +382,64 @@ h2{
 .admin{
   margin: 0px 0px 15px 15px;
   display: grid;
-  background-color: white;
-  background-image: linear-gradient(to right white 0%, black 100%);
-  height: 100%;
-  grid-template-columns: 1fr;
+  background-image: linear-gradient(to right, #000000 0%, #665c40 40%, #e08600 100%);
+  grid-template-rows: 1fr 1fr;
+  height: 400px;
+  max-height: 800px;
+
+}
+.admin-top{
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.circle-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+border-radius: 50%;
+
+}
+.circle-img img{
+  border-radius: 50%;
+  max-height: 200px;
+  border: #ffffff solid 3px;
+}
+.admin-bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left-admin{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.left-admin img{
+max-height: 70%;
+max-width: 70%;
+}
+.right-admin{
+
+  display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+}
+.right-admin p{
+  margin-left: 15px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.box{
+  background-color: #d0e297c0;
+  max-height: calc(100%);
+  max-width: calc(100% - 60px);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.734);
 }
 .content2{
   margin: 0px 15px 0px 0px ;
@@ -518,7 +572,7 @@ margin: 5px;
 display: grid;
 grid-template-columns: 3fr 1fr;
 background-image: linear-gradient(to top,#f0ede5 0%, #ffbdd1 100%);
-margin:0px 15px 15px 0xpx ;
+margin:0px 15px 15px 0px ;
 }
 .left4{
 padding: 20px;
@@ -921,8 +975,74 @@ h2{
   margin-top: 0px;
 
 }
+.admin{
+  margin: 0px 0px 15px 15px;
+  display: flex;
+  background-image: linear-gradient(to right, #000000 0%, #665c40 40%, #e08600 100%);
+  grid-template-columns: 0.5fr 1fr;
+  max-height: 600px;
+  color: white;
+}
+.admin h2{
+  font-size: larger;
+
+}
+.admin-top{
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.circle-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+border-radius: 50%;
+
+}
+.circle-img img{
+  border-radius: 50%;
+  max-height: 200px;
+  border: #ffffff solid 3px;
+}
+.admin-bottom{
+  display: flex;
+  flex-direction: column;
+
+}
+.left-admin{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.left-admin img{
+max-height: 70%;
+max-width: 70%;
+}
+.right-admin{
+margin-top: 10px;
+  display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+.right-admin p{
+  margin-left: 15px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.box{
+  background-color: #d0e297c0;
+  max-height: calc(100%);
+  max-width: calc(100% - 60px);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.734);
+}
 .content2{
-margin: 0px 0px 15px 15px;
+margin: 0px 15px 0px 0px ;
 background-image: linear-gradient(to right,#fdae7a 0%, #efbf38 20%, #e08600 50%);
 display: grid;
 grid-template-columns: 1.5fr 1fr;
@@ -953,8 +1073,9 @@ position: relative; /* Ensure relative positioning for absolutely positioned ele
   margin:2px;
   }
 .content3{
-margin: 0px 15px 0px 0px ;
-background-image: linear-gradient(to left, #999999 0%, #32564f80 100%);
+
+margin: 15px 0px 15px 15px;
+background-image: linear-gradient(-45deg, #EA4335 0%, #FBBC05 50%, #34A853 75%, #4285F4 100%);
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
@@ -999,7 +1120,8 @@ font-size: 20px;
 display: flex;
 grid-template-columns: 1fr;
 background-image: linear-gradient(to top, #999999 0%, #999999 20%, #ffbdd1 100%);
-margin: 15px 0px 15px 15px;
+
+margin:0px 15px 15px 0px ;
 flex-direction: column;
 }
 .left4{
