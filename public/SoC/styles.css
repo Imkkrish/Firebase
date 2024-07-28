@@ -254,9 +254,7 @@
     .accordion:nth-child(4) {
       background: linear-gradient(200deg, #c215d1 13.57%, #9813a1 98.38%);
    }
-    .spacer {
-      height: 70vh;
-   }
+
     @media (max-width: 480px) {
       .accordion {
         padding: 15px 20px 8px;
@@ -268,9 +266,9 @@
     
 
     /* Timeline  */
-    section {
+    /* section {
       padding: 100px 0;
-   }
+   } */
     html, body {
       overflow-x: hidden;
    }
@@ -289,11 +287,11 @@
     header {
       background: #3f51b5;
       color: #fff;
-      padding: 150px 0;
+      padding: 10px 0;
    }
     header p {
       font-family: 'Allura';
-      color: rgba(255, 255, 255, .2);
+      color: rgba(158, 14, 14, 0.2);
       margin-bottom: 0;
       font-size: 60px;
       margin-top: -30px;
