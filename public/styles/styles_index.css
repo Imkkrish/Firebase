@@ -37,7 +37,7 @@ background-color: #000000;
   left:0;
   margin: 0px 15px 15px 0px ;
   grid-template-columns: 0.5fr 1fr;
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 40%, #d3fd4b80 70%, #00000080 100%);
+  background-image: linear-gradient(to right, #010044 20%,  #00000080 100%);
 
 }
 .scrolled-up .svg-container {
@@ -317,7 +317,7 @@ top:5%;
 }
 .box-detail-C1{
 
-  background-color: #58a0c9;
+  background-color:#FA0000;
   position: absolute;
   left: 0px;
   top:20px;
@@ -325,13 +325,12 @@ top:5%;
   width: 260px;
   border-radius: 70% 70% 0% 70% ;
   padding:10px 20px 10px 20px;
-  background-image: linear-gradient(-45deg, #fa709a 0%, #fee140 100%);
   box-shadow:-4px 0 8px rgba(0, 0, 0, 0.3), /* Left shadow */
               0 -4px 8px rgba(0, 0, 0, 0.3); /* Top shadow */
 }
 
 .box-detail-c{
-  background-color: #58a0c9;
+  background-color: #008000;
   position: absolute;
   left: 340px;
   top: 20px;;
@@ -339,12 +338,11 @@ top:5%;
   width: 260px;
   border-radius: 70% 70% 70% 0%  ;
   padding:10px 20px 10px 20px;
-  background-image: linear-gradient(45deg, #fa709a 0%, #fee140 100%);
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3), /* Right shadow */
             0 -4px 8px rgba(0, 0, 0, 0.3); /* Top shadow */
 }
 .box-detail-p{
-  background-color: #58a0c9;
+  background-color: #FFC500;
   position: absolute;
   left: 340px;
   top:340px;
@@ -352,13 +350,12 @@ top:5%;
   width: 260px;
   border-radius: 0% 70% 70% 70% ;
   padding:10px 20px 10px 20px;
-  background-image: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3), /* Right shadow */
             0 4px 8px rgba(0, 0, 0, 0.3); /* bottom shadow */
 }
 
 .box-detail-C2{
-  background-color: #58a0c9;
+  background-color: #00B2FF;
   position: absolute;
   left:0px;
   top:340px;
@@ -366,7 +363,6 @@ top:5%;
   width: 260px;
   border-radius: 70% 0% 70% 70% ;
   padding:10px 20px 10px 20px;
-  background-image: linear-gradient(-135deg, #fa709a 0%, #fee140 100%);
   box-shadow:-4px 0 8px rgba(0, 0, 0, 0.3), /* Left shadow */
             0 4px 8px rgba(0, 0, 0, 0.3); /* bottom shadow */
 }
@@ -382,7 +378,7 @@ h2{
 .admin{
   margin: 0px 0px 15px 15px;
   display: grid;
-  background-image: linear-gradient(to right, #000000 0%, #665c40 40%, #e08600 100%);
+  background-image: linear-gradient(to left, #010044 20%,  #00000080 100%);
   grid-template-rows: 1fr 1fr;
   height: 400px;
   max-height: 800px;
@@ -435,7 +431,7 @@ margin-top: 40px;
   padding-bottom: 10px;
 }
 .box{
-  background-color: #d0e297c0;
+  background-color: rgb(171, 171, 171);
   max-height: calc(100%);
   max-width: calc(100% - 60px);
   border-radius: 10px;
@@ -443,7 +439,7 @@ margin-top: 40px;
 }
 .content2{
   margin: 0px 15px 0px 0px ;
-  background-image: linear-gradient(to right,#e08600 0%, #aa4c0a 40% , #000000 100%);
+  background-image: linear-gradient(to right, #010044 20%,  #00000080 100%);
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -492,12 +488,12 @@ border-radius: 0 9px 0 0px; /* Rounded corners */
 .right2{
 }
 .event-box{
-background-color: #e297ae;
+background-color: #e8d5dade;
 height: auto;
-max-width: calc(100% - 20px);
-margin-left: auto;
 padding-left: 20px;
-border-radius: 50px 0 0 50px;
+padding-right: 10px;
+border-radius: 50px;
+margin-right: 5px;
 }
 .add-flex{
 display: flex;
@@ -507,7 +503,7 @@ justify-content: center;
 }
 .content3{
 margin:15px 0px 15px 15px ;
-background-image: linear-gradient(to left, #EA4335 25%, #FBBC05 45%, #34a853bb 65%, #4286f4cb 90%, #0000007b 100%);
+background-image: linear-gradient(to left, #010044 20%,  #00000080 100%);
 display: grid;
 grid-template-columns: 1.5fr 1fr;
 
@@ -571,7 +567,7 @@ margin: 5px;
 .content4{
 display: grid;
 grid-template-columns: 3fr 1fr;
-background-image: linear-gradient(to top,#000000 0%, #ffbdd1 100%);
+background-image: linear-gradient(to right, #010044 20%,  #00000080 100%);
 margin:0px 15px 15px 0px ;
 }
 .left4{
@@ -944,7 +940,6 @@ top:calc(50% - 150px);
   width: 120px;
   border-radius: 0% 70% 70% 70% ;
   padding:10px 20px 10px 20px;
-  background-image: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3), /* Right shadow */
             0 4px 8px rgba(0, 0, 0, 0.3); /* bottom shadow */
 }
@@ -958,7 +953,6 @@ top:calc(50% - 150px);
   width: 120px;
   border-radius: 70% 0% 70% 70% ;
   padding:10px 20px 10px 20px;
-  background-image: linear-gradient(-135deg, #fa709a 0%, #fee140 100%);
   box-shadow:-4px 0 8px rgba(0, 0, 0, 0.3), /* Left shadow */
             0 4px 8px rgba(0, 0, 0, 0.3); /* bottom shadow */
 }
@@ -978,7 +972,6 @@ h2{
 .admin{
   margin: 0px 0px 15px 15px;
   display: flex;
-  background-image: linear-gradient(to right, #000000 0%, #665c40 40%, #e08600 100%);
   grid-template-columns: 0.5fr 1fr;
   max-height: 600px;
   color: white;
