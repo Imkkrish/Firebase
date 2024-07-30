@@ -139,7 +139,13 @@
       background-color: #8c8c8c;
       color: #fff;
   }
-  
+ 
+footer {
+  position: absolute;
+
+  width: 100%;
+}
+
 
   .ccpc-no {
     color: rgb(0, 0, 0);
