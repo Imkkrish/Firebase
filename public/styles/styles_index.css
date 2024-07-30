@@ -313,6 +313,7 @@ transition: all 0.5s ease;
   transition: all 0.5s ease;
 position: relative;
 top:5%;
+opacity: 0.2;
 
 }
 .box-detail-C1{
@@ -323,6 +324,7 @@ top:5%;
   top:20px;
   height: 260px;
   width: 260px;
+
   border-radius: 70% 70% 0% 70% ;
   padding:10px 20px 10px 20px;
   box-shadow:-4px 0 8px rgba(0, 0, 0, 0.3), /* Left shadow */
@@ -350,6 +352,7 @@ top:5%;
   width: 260px;
   border-radius: 0% 70% 70% 70% ;
   padding:10px 20px 10px 20px;
+
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3), /* Right shadow */
             0 4px 8px rgba(0, 0, 0, 0.3); /* bottom shadow */
 }
@@ -361,6 +364,7 @@ top:5%;
   top:340px;
   height: 260px;
   width: 260px;
+ 
   border-radius: 70% 0% 70% 70% ;
   padding:10px 20px 10px 20px;
   box-shadow:-4px 0 8px rgba(0, 0, 0, 0.3), /* Left shadow */
