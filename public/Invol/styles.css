@@ -61,16 +61,10 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
-
-  
-.soc{
-    font-family: monospace;
-    font-size: 20px;
-}
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
+    color: #f2f2f2;
     margin: 0;
     padding: 0;
     background-image:linear-gradient(to right, #003a4f,#000000, #290000);
@@ -80,14 +74,18 @@ body {
     position: relative;
     z-index: 1;
     padding: 20px;
-    color: #000000;
-    background: rgba(255, 255, 255, 0.324)!important;
+    color: #292525;
+    background: rgba(255, 255, 255, 0)!important;
+}
+.content h2{
+    color:black;
 }
 header, footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    border-radius:10px ;
     
 }
 .svg-container{
@@ -149,7 +147,7 @@ p{
     margin:2px;
 }
 a {
-    color: #000000;
+    color: #864101;
     text-decoration: none;
 }
 
@@ -166,9 +164,10 @@ max-height: 800px; /* Adjust max height as needed */
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     border: none;
+    border-radius: 50px;
     background-color: #3e2c2c ;
 }
 
@@ -183,7 +182,7 @@ iframe {
     padding: 10px;
     border-radius:10px ;
 }
-.event{
+.events{
     font-family: monospace;
     font-size: 15px;
 }
@@ -197,7 +196,7 @@ th, td {
     text-align: left;
 }
 th {
-    background-color: #f2f2f2;
+    background-color: #686868;
 }
 .contribution{
     font-size: 15px;
