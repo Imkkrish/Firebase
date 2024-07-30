@@ -8,7 +8,14 @@ body, html {
   background-size: cover;
 
 }
+ul {
+  list-style-type: disc !important; /* Ensures bullets are shown */
+  padding-left: 20px; /* Adds some padding to align bullets */
+}
 
+li {
+  margin-bottom: 5px; /* Optional: Adds some space between list items */
+}
 p{
  font-size: 18px;
 }

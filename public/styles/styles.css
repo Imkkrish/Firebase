@@ -7,7 +7,7 @@ body, html {
 }
 ul p{
     margin: 0;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
 }
 .svg-container {
     position:absolute;
@@ -209,11 +209,6 @@ div.nav-desktop a:hover:before, div.nav-desktop a:hover:after
 {
     opacity: 1;
     width: 100%;
-}
-
-/* List items style reset */
-li {
-    list-style-type: none;
 }
 
 #starfield {
