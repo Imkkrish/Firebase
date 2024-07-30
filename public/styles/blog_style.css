@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: cursive, sans-serif;
-  background-image: linear-gradient(to bottom, #d1ae90 0%, #d7a072 38%, #d7a072 68%, #d8843f 100%);
+  background-image: linear-gradient(to left, #282843 20%, #0e0d3e);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,6 +36,7 @@ flex-direction: column;
 position: relative;
 margin-top: 100px;
 padding-bottom: 20px;
+color: grey;
 }
 .topbody {
   display: flex;
@@ -57,20 +58,20 @@ grid-template-columns: 1fr 4fr 1fr;
 .article {
   font-family: 'Times New Roman', Times, serif;
   background-color: rgba(0, 0, 0, 0.304);
-  color: #d4d4d4f5;
+  color: #d4d4d4;
   padding: 10px;
   transition: background-color 0.5s, color 0.5s;
   cursor: pointer;
 }
 
 .article.clicked {
-  background-color: rgba(69, 19, 19, 0.289);
-  color: #000000;
+  background-color: rgba(69, 19, 19, 0);
+  color: grey
   
 }
 
 .date {
-  color: rgb(95, 6, 6);
+  color: grey
 }
 .article.clicked .date {
   color: rgb(239, 239, 239);
