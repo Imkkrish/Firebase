@@ -312,7 +312,7 @@ div.nav-desktop a:hover:before, div.nav-desktop a:hover:after
   }
   .address p{
     color: white !important;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 16px;
     margin-top: 5px;
     margin-bottom: 2px;
@@ -326,12 +326,12 @@ div.nav-desktop a:hover:before, div.nav-desktop a:hover:after
   .copyright {
   display: flex;
   justify-content: center;
-  color: rgb(75, 60, 41);
-  padding-right: 30px;
+  color: rgb(95, 110, 171);
+  
   }
   
   .copyright p {
-  font-size: 12px; /* Adjust the font size as needed */
+  font-size: 18px; /* Adjust the font size as needed */
   }
   .credit {
   color: white;
@@ -349,8 +349,10 @@ div.nav-desktop a:hover:before, div.nav-desktop a:hover:after
   color: #b94141;
   mix-blend-mode: difference;
   }
-  
-
+  hr{
+    margin: 30px 0 5px 0;
+    border-color: rgb(95, 110, 171);
+  }
 @media (max-width:932px) {
     html,
     body {
