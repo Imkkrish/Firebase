@@ -50,7 +50,7 @@ background-color: #000000;
 #word {
   color: rgb(255, 255, 255); 
   font-size: 28px;
-  font-family: cursive, sans-serif;
+  font-family: monospace, sans-serif;
 
   /* Change the color here */
 }
