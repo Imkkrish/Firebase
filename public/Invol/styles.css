@@ -70,6 +70,7 @@ body {
     background-image:linear-gradient(to right, #003a4f,#000000, #290000);
 
 }
+
 .content {
     position: relative;
     z-index: 1;
@@ -88,6 +89,9 @@ header, footer {
     border-radius:10px ;
     
 }
+.navbar {
+    display: flex;
+}
 .svg-container{
     display:flex;
     justify-content: space-around;
@@ -95,6 +99,7 @@ header, footer {
 
 header h1, footer p {
     margin: 0;
+    padding: 0 20px 0 30%;
 }
 
 .container {
@@ -178,7 +183,7 @@ iframe {
 
 }
 .box{
-    background-color: #ffffff94;
+    background-color: #ffffffd1;
     padding: 10px;
     border-radius:10px ;
 }
