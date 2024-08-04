@@ -224,19 +224,66 @@
       line-height: 1.1;
       padding-bottom: 0.4em;
       color: #fff;
-      text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+      font-size: 7vh;
+      text-shadow: 0 4px 2px rgba(0, 0, 0, .1);
    }
     .text {
       line-height: 1.4;
+      text-align: center;
+      font-size: 3.5vh;
+      font-weight: 200;
       overflow: hidden;
       padding-bottom: 20px;
       color: rgba(255, 255, 255, 0.7);
    }
+ 
+   button {
+    border-radius: 5px;
+    background-color: #089450;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 10px;
+    width: fit-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .btn-1{
+    background-color: #10b1d5;
+  }
     .accordions {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 20vh;
+      column-gap: 30px;
+      padding-bottom: 10vh;
    }
     .accordion {
       background: linear-gradient(200deg, #1d91fc 13.57%, #5a36c0 98.38%);
@@ -250,10 +297,7 @@
    }
     .accordion:nth-child(3) {
       background: linear-gradient(200deg, #65bb76 13.57%, #466fab 98.38%);
-   }
-    .accordion:nth-child(4) {
-      background: linear-gradient(200deg, #c215d1 13.57%, #9813a1 98.38%);
-   }
+    }
 
     @media (max-width: 480px) {
       .accordion {
@@ -269,7 +313,7 @@
     /* section {
       padding: 100px 0;
    } */
-    html, body {
+    /* html, body {
       overflow-x: hidden;
    }
     body {
@@ -295,7 +339,7 @@
       margin-bottom: 0;
       font-size: 60px;
       margin-top: -30px;
-   }
+   } */
     .timeline-vertical {
       position: relative;
    }
