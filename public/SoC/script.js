@@ -1,3 +1,37 @@
+document.addEventListener("DOMContentLoaded", function() {
+            const text = "Seasons of Code";
+
+            function createTextSemiCircle(className, rotationAngle) {
+                const container = document.querySelector(`.${className}`);
+                const numChars = text.length;
+                const anglePerChar = 130 / (numChars - 1); // Adjust based on the number of characters
+                
+                text.split('').forEach((char, index) => {
+                    const span = document.createElement('span');
+                    span.textContent = char;
+                    span.style.transform = `rotate(${index * anglePerChar + rotationAngle}deg)`;
+                    container.appendChild(span);
+                });
+            }
+
+           // Create text instances at different positions
+            createTextSemiCircle('text-semi-circle-1', 10);
+            createTextSemiCircle('text-semi-circle-2', 0);
+            createTextSemiCircle('text-semi-circle-3', 0);
+            createTextSemiCircle('text-semi-circle-4', 10);
+            createTextSemiCircle('text-semi-circle-5', 0);
+            createTextSemiCircle('text-semi-circle-6', 0);
+            createTextSemiCircle('text-semi-circle-7', 10);
+            createTextSemiCircle('text-semi-circle-8', 0);
+            createTextSemiCircle('text-semi-circle-9', 0);
+            createTextSemiCircle('text-semi-circle-10', 10);
+            createTextSemiCircle('text-semi-circle-11', 0);
+            createTextSemiCircle('text-semi-circle-12', 0);
+            createTextSemiCircle('text-semi-circle-13', 10);
+            createTextSemiCircle('text-semi-circle-14', 0);
+            createTextSemiCircle('text-semi-circle-15', 0);
+            createTextSemiCircle('text-semi-circle-16', 0);
+        });
 const rocket = document.querySelector('#rocket');
 const sky = document.querySelector('#sky');
 const ex = document.querySelector('#exhaust');
