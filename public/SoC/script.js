@@ -32,61 +32,80 @@ document.addEventListener("DOMContentLoaded", function() {
             createTextSemiCircle('text-semi-circle-15', 0);
             createTextSemiCircle('text-semi-circle-16', 0);
         });
-const rocket = document.querySelector('#rocket');
-const sky = document.querySelector('#sky');
-const ex = document.querySelector('#exhaust');
-const content = document.querySelector('.content');
-var bottom = 0;
-
-window.addEventListener('scroll', function() {
-  var y = document.documentElement.scrollTop;
-
-  // Calculate the percentage of the scroll
-  var perc = y / 300;
-
-  // Adjust the sky's bottom position
-  if (perc < 1) {
-    sky.style.bottom = -1 * (perc) * 100 + '%';
-  } else {
-    sky.style.bottom = '-99%';
-  }
-
-  // Add or remove classes based on scroll percentage
-  if (perc > 0) {
-    rocket.classList.add('shake_rocket');
-    ex.classList.add('exhaust');
-  } else {
-    rocket.classList.remove('shake_rocket');
-    ex.classList.remove('exhaust');
-  }
-
-  if (perc > .37) {
-    ex.classList.remove('exhaust');
-  }
-
-  // Adjust the rocket's bottom position
-  if (perc > 0) {
-    bottom = (perc - .25) * 133;
-    if (perc - .25 < 0) {
-      bottom = 0;
-    }
-    rocket.style.bottom = bottom + '%';
-  }
-
-  // Set rocket's bottom position to 140% after scrolling 300px
-  if (y >= 300) {
-    rocket.style.bottom = '140%';
-  }
-
-  // Automatic scroll to main content
-  if (y < 200) {
-    window.scrollTo({
-      top: content.offsetTop,
-      behavior: 'smooth'
-    });
-  }
-});
-
+        const rocket = document.querySelector('#rocket');
+        const sky = document.querySelector('#sky');
+        const ex = document.querySelector('#exhaust');
+        const content = document.querySelector('.content');
+        var bottom = 0;
+        
+        function smoothScrollTo(target, duration) {
+          const start = window.pageYOffset;
+          const distance = target - start;
+          const startTime = performance.now();
+        
+          function animation(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1);
+            window.scrollTo(0, start + (distance * easeInOutQuad(progress)));
+        
+            if (elapsedTime < duration) {
+              requestAnimationFrame(animation);
+            }
+          }
+        
+          function easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+          }
+        
+          requestAnimationFrame(animation);
+        }
+        
+        window.addEventListener('scroll', function() {
+          var y = document.documentElement.scrollTop;
+        
+          // Calculate the percentage of the scroll
+          var perc = y / 300;
+        
+          // Adjust the sky's bottom position
+          if (perc < 1) {
+            sky.style.bottom = -1 * (perc) * 100 + '%';
+          } else {
+            sky.style.bottom = '-99%';
+          }
+        
+          // Add or remove classes based on scroll percentage
+          if (perc > 0) {
+            rocket.classList.add('shake_rocket');
+            ex.classList.add('exhaust');
+          } else {
+            rocket.classList.remove('shake_rocket');
+            ex.classList.remove('exhaust');
+          }
+        
+          if (perc > .37) {
+            ex.classList.remove('exhaust');
+          }
+        
+          // Adjust the rocket's bottom position
+          if (perc > 0) {
+            bottom = (perc - .25) * 133;
+            if (perc - .25 < 0) {
+              bottom = 0;
+            }
+            rocket.style.bottom = bottom + '%';
+          }
+        
+          // Set rocket's bottom position to 140% after scrolling 300px
+          if (y >= 300) {
+            rocket.style.bottom = '140%';
+          }
+        
+          // Automatic scroll to main content with custom speed
+          if (y < 200) {
+            smoothScrollTo(content.offsetTop, 2000); // 2000ms for slower scroll
+          }
+        });
+        
 // content js
 /*------------------------------
 Register plugins
