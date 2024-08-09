@@ -1,3 +1,58 @@
+
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #000000;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+/* .tooltip {
+  visibility: hidden;
+  width: 140px;
+  background-color: rgb(0, 0, 0);
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  position: absolute;
+  left: -50%;
+  top:50px;
+
+}
+
+.scroller:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+} */
 .circle-container {
   position: fixed;
   width: 100vw;
@@ -259,13 +314,12 @@
     line-height: 1.1;
     padding-bottom: 0.4em;
     color: #fff;
-    font-size: 7vh;
+    font-size: 35px;
     text-shadow: 0 4px 2px rgba(0, 0, 0, .1);
  }
     .text-box {
       line-height: 1.4;
-    text-align: center;
-    font-size: 3.5vh;
+    font-size: 20px;
     font-weight: 200;
     overflow: hidden;
     padding-bottom: 20px;
@@ -320,6 +374,7 @@ button:hover span:after {
     padding-bottom: 10vh;
  }
   .accordion {
+
     background: linear-gradient(200deg, #1d91fc 13.57%, #5a36c0 98.38%);
     padding: 25px 30px 10px;
     border-radius: 15px;
