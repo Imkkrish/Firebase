@@ -316,77 +316,105 @@
     color: #fff;
     font-size: 35px;
     text-shadow: 0 4px 2px rgba(0, 0, 0, .1);
- }
-    .text-box {
-      line-height: 1.4;
+}
+
+.text-box {
+    line-height: 1.4;
     font-size: 20px;
     font-weight: 200;
     overflow: hidden;
     padding-bottom: 20px;
     color: rgba(255, 255, 255, 0.7);
- }
- button {
-  border-radius: 5px;
-  background-color: #089450;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px 10px;
-  width: fit-content;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+    max-height: 150px;
+    transition: max-height 0.5s ease;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #089450;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 10px;
+
+    width: fit-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px auto ; /* Center button */
+    display: block; /* Center button */
 }
 
 button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 button:hover span {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 button:hover span:after {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0;
 }
-.btn-1{
-  background-color: #10b1d5;
+
+.btn-1 {
+    background-color: #10b1d5;
 }
-  .accordions {
+
+.accordions {
     display: flex;
     flex-direction: column;
     align-items: center;
     column-gap: 30px;
     padding-bottom: 10vh;
- }
-  .accordion {
+}
 
-    background: linear-gradient(200deg, #1d91fc 13.57%, #5a36c0 98.38%);
+.accordion {
     padding: 25px 30px 10px;
     border-radius: 15px;
     margin-bottom: 40px;
-    box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .3);
- }
-  .accordion:nth-child(2) {
+    overflow: hidden;
+
+    max-height: 900px; 
+    transition: max-height 0.5s ease;
+}
+
+.box-accordion{
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+}
+.box-accordion:nth-child(1) {
+  background: linear-gradient(200deg, #1d91fc 13.57%, #5a36c0 98.38%);
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .3);
+
+
+}
+.box-accordion:nth-child(2) {
     background: linear-gradient(200deg, #f28885 13.57%, #e94f66 98.38%);
- }
-  .accordion:nth-child(3) {
+    box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .3);
+
+}
+.box-accordion:nth-child(3) .text-box{
+  max-height: 200px;
+}
+.box-accordion:nth-child(3) {
     background: linear-gradient(200deg, #65bb76 13.57%, #466fab 98.38%);
-  }
+    box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .3);
+
+}
 
   @media (max-width: 480px) {
     .accordion {
