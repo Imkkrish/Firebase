@@ -111,4 +111,3 @@ window.addEventListener("load", checkOrientation);
 // Check orientation on resize
 window.addEventListener("resize", checkOrientation);
 // Add other JavaScript functions as needed
-
