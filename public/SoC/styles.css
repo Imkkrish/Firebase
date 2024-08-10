@@ -114,7 +114,7 @@
           height: 250px;
           font-size: 18px;
           line-height: 1;
-          font-family: cursive;
+          font-family: monospace;
           z-index: 0;
       }
 
@@ -181,6 +181,24 @@
     font-size: 20px;
     margin-left: 30px;
   }
+  
+.text-part {
+  position: absolute;
+  text-align: center;
+  transform: translateY(0); /* Start from the visible position */
+  opacity: 0; /* Start fully invisible */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.text-part.hide {
+  transform: translateY(-3px); /* Move up slightly and fade out */
+  opacity: 0;
+}
+
+.text-part.show {
+  transform: translateY(0); /* Stay in place */
+  opacity: 1;
+}
  .soc-img {
     align-content: center;
     text-align: center;
