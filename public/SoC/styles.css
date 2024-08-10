@@ -156,6 +156,10 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+  .spacer{
+    margin: 20px;
+    padding: 20px;
+  }
   .soc{
     color:red;
     display: flex;
@@ -169,7 +173,7 @@
     display: flex;
   }
   #soc-name{
-    font-size: 25cap;
+    font-size: 175px;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -444,10 +448,9 @@ button:hover span:after {
   
  .timeline-wrapper {
   position: relative;
-  padding: 20px 0;
   background: linear-gradient(to bottom, #6E40C9, #00ffea); /* Apply the gradient to the wrapper */
   width: 5px;
-  margin-left: 50px; /* Adjust to position the line */
+  margin-left: 20px; /* Adjust to position the line */
   border-radius: 10px;
 }
 
