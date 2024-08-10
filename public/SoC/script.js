@@ -117,17 +117,15 @@ window.addEventListener('scroll', function() {
     scrollBtn.style.visibility = 'visible';
   }
 });
-
-
         document.querySelectorAll('.toggle-btn').forEach((button, index) => {
           button.addEventListener('click', function () {
               const accordion = this.previousElementSibling;
               const textBox = accordion.querySelector('.text-box');
               const isThirdAccordion = accordion.parentElement.matches('.box-accordion:nth-child(3)');
-              const expanded = textBox.style.maxHeight && textBox.style.maxHeight !== (isThirdAccordion ? '200px' : '150px');
+              const expanded = textBox.style.maxHeight && textBox.style.maxHeight !== (isThirdAccordion ? '380px' : '250px');
       
               if (expanded) {
-                  textBox.style.maxHeight = isThirdAccordion ? '200px' : '150px';  // Restore specific height
+                  textBox.style.maxHeight = isThirdAccordion ? '380px' : '250px';  // Restore specific height
                   this.querySelector('span').textContent = 'Read More';
               } else {
                   textBox.style.maxHeight = textBox.scrollHeight + 'px';  // Expand to full height
@@ -178,6 +176,18 @@ tl.to(
   },
   "<"
 );
+document.addEventListener("DOMContentLoaded", function() {
+  const timelineWrapper = document.querySelector('.timeline-wrapper');
+  const lastTimelineIcon = document.querySelector('.timeline:last-child .timeline-icon');
+
+  if (timelineWrapper && lastTimelineIcon) {
+    const timelineRect = lastTimelineIcon.getBoundingClientRect();
+    const wrapperRect = timelineWrapper.getBoundingClientRect();
+
+    // Adjust the height of the timeline-wrapper to match the last .timeline-icon position
+    timelineWrapper.style.height = (timelineRect.top - wrapperRect.top + timelineRect.height) + 'px';
+  }
+});
 
 // timeline
 $(function() {
