@@ -134,6 +134,35 @@ window.addEventListener('scroll', function() {
           });
       });
       
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const parts = document.querySelectorAll('.text-part');
+        let currentIndex = 0;
+      
+        function rotateText() {
+          // Hide current text
+          parts[currentIndex].classList.remove('show');
+          parts[currentIndex].classList.add('hide');
+      
+          // Move to the next text
+          currentIndex = (currentIndex + 1) % parts.length;
+      
+          // Show next text
+          setTimeout(() => {
+            parts[currentIndex].classList.remove('hide');
+            parts[currentIndex].classList.add('show');
+          }, 500); // Slight delay to ensure smooth transition
+        }
+      
+        // Start with the first text part visible after a brief delay
+        setTimeout(() => {
+          parts[currentIndex].classList.add('show');
+        }, 500); // Delay the start to create the desired effect
+      
+        // Loop the animation
+        setInterval(rotateText, 3000); // Change every 3 seconds
+      });
+      
 // content js
 /*------------------------------
 Register plugins
