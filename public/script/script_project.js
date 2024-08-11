@@ -3,7 +3,7 @@ const cardsData1 = [
     { id: 2, top: 50, left: 120, img: 'https://via.placeholder.com/150', text: 'Programming Language Concept of DSA/MySQL/DBMS', githubLink: 'https://github.com/CcpC-cuj/Algo_Visuals' },
     { id: 3, top: 100, left: 240, img: 'https://via.placeholder.com/150', text: 'Web-Development', githubLink: 'https://github.com/CcpC-cuj/Webdev' },
     { id: 4, top: 150, left: 360, img: 'https://via.placeholder.com/150', text: 'AI/Ml', githubLink: 'https://github.com/CcpC-cuj/Climate_Agri_Optimize_Predict' },
-    { id: 5, top: 200, left: 480, img: 'https://via.placeholder.com/150', text: 'Graphics', githubLink: '#' },
+    { id: 5, top: 200, left: 480, img: 'https://via.placeholder.com/150', text: 'Graphics', githubLink: 'https://github.com/CcpC-cuj/Car_game_Opengl.py' },
     { id: 6, top: 250, left: 600, img: 'https://via.placeholder.com/150', text: 'UI/UX', githubLink: '#' }
 ];
 // const cardsData2 = [
