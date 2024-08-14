@@ -564,8 +564,7 @@ a::after {
   z-index: -1;
   will-change: transform, opacity;
 }
-
-span {
+#link{
   font-size: 1em;
   line-height: 1;
   font-weight: 900;
