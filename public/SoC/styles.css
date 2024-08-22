@@ -454,13 +454,18 @@ button:hover span:after {
     box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .3);
 
 }
-
+br{
+display: none;
+}
   @media (max-width:932px){
     .accordion {
       padding: 15px 20px 8px;
    }
     .title {
       font-size: 20px;
+   }
+   br {
+    display: block;
    }
  }
   
@@ -512,7 +517,9 @@ button:hover span:after {
   
 .accordions {
   flex-direction: column;
+  
 }
+
 }
 
 /* Links */
