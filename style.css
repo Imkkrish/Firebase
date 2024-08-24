@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body
+{
+    background: url(bg.jpg);
+    display: flex;
+    justify-content: center;
+    
+}
+/* .container{
+
+
+} */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.leftbox{
+    background:url(bg.jpg);
+    width: 25%;
+    height: 100vh;
+    /* padding: 4vw; */
+    font-size: 2vw;
+    
+    
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 0vw;
+    height: 90vh;
+    background-color: black;
+    color: white;
+    transition: all .5s ease;
+    padding-top: 5vh;
+    margin-top: 5vh;
+
+}
+.sidebar header{
+    margin-top:3vh;
+    font-size: 0;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    height: 8vh;
+    background-color:rgb(59, 55, 55);
+    
+}
+.sidebar ul li a{
+    /* display: block; */
+    height: 100%;
+    width: 100%;
+    line-height:65px ;
+    color: white;
+    padding-left: 4vw;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(77, 73, 73);
+    border-bottom: 1px solid rgb(65, 63, 60);
+    display: none;
+    /* list-style: disc; */
+}
+.sidebar ul li{
+    list-style: disc;
+
+}
+ul li:hover a{
+    padding-left: 5vw;
+    /* background-color: rgb(73, 71, 71); */
+}
+
+/* .intro{
+    padding-left: 4vw;
+} */
+.left  ul li{
+    margin: 10px;
+}
+.right{
+    background:url(bg.jpg);
+    height: 100vh;
+    width: 75%;
+    overflow: scroll;
+
+}
+.container{
+    background: linear-gradient(45deg,rgb(218, 115, 218),rgb(153, 153, 226));
+    /* background-color:#cfc6c6; */
+    margin: 5vw;
+    margin-left: 5vw;
+    /* height: 100vh; */
+    width: 80%;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 5vw;
+     
+}
+.btn
+{
+    font-size: 3.5vw;
+    height: 2vw;
+    width: 2vw;
+}
+/* .cancel{
+    font-size: 1vw;
+    height: 2vw;
+    width: 2vw;
+} */
+#check{
+    display: none;
+
+}
+label .btn,label.cancel{
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border-radius: 3px;
+
+}
+label .btn{
+    left: 4vw;
+    /* top: 2.5vh; */
+    /* padding: 3px 10px; */
+    /* display: none; */
+    transition: all .5s;
+    top: 4vw;
+    
+}
+label .cancel{
+    position:absolute;
+    top: 0.7vh;
+    z-index: 1111;
+    left: 195px;
+    top: 10vh;
+    /* padding-top: 10vh; */
+    font-size: 30px;
+    color: black;
+    padding-left: 8vw;
+    /* padding-top: 5vh; */
+    transition: all .5s ease;
+    font-size: 0;
+    height: 0vh;
+    width: 0vw;
+}
+#check:checked ~ .sidebar{
+width: 25vw;
+}
+#check:checked ~ .sidebar ul li a{
+    /* padding-left:4vw ; */
+    display: block;
+}
+
+#check:checked ~ label .btn{
+    left: 25vw;
+    opacity: 0;
+    pointer-events: none;
+
+}
+#check:checked ~ .sidebar header{
+    font-size: 5vh;
+}
+#check:checked ~ label .cancel{
+    height: 3vh;
+    width: 2vw;
+} 
+/* #check:checked ~ .right{
+    width: 75%;
+}
+#check:checked ~ .leftbox{
+    width: 25%;
+}
+#check:checked ~ .container{
+    width: 75vw;
+    margin-left: 11vw;
+} */
+ p{
+    font-size: 1.8vw;
+    font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+ }
+ ul{
+    font-size: 1.8vw;
+    margin-top: 2vw;
+    font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+ }
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+h3{
+    font-size: 1.7vw;
+}
+h2{
+    font-size: 2vw;
+}
+.first a{
+    font-size: large;
+}
+.first div:hover{
+border:2px solid skyblue ;
+background-color: antiquewhite;
+margin-left: 0;
+padding-left: 0;
+border-radius: 15px;
+box-shadow: 5px 6px grey;
+
+}
+.right h1{
+    font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+details{
+    color: red;
+}
+::-webkit-scrollbar{
+    background-color: white;
+}
+::-webkit-scrollbar-track{
+    background-color: grey;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
