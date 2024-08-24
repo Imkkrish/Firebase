@@ -417,7 +417,7 @@ button:hover span:after {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     column-gap: 30px;
     padding-bottom: 10vh;
 }
