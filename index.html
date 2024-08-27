@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="main-content">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>CcpC</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://unpkg.com/vanta/dist/vanta.clouds.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/CcpC.png">
+    <link rel="stylesheet" href="style_project.css">
+    <link rel="stylesheet" href="./public/styles/styles.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="cont">
+       
+        <!-- Navigation buttons -->
+        <div class ="navbar "><!-- Fixed Navigation Bar all buttons on right side-->
+            <div class="svg-container">
+                <img src="img/navlogo.svg" alt="Logo" id="mySVG">
+                <div id="output">
+                    <span id="word"></span>
+                </div>
+            </div>
+            <div class ="navright">
+                <div class="searchBox">
+                    <input class="searchInput"type="text" name="" placeholder="Search...">
+                        <i class="fas fa-search" onclick="toggleSearch"></i>
+                </div>
+                <!-- Desktop view navigation -->
+                <div class="nav-desktop ">
+                    <a href="/" id="home">Home</a>
+                    <a href="/SoC/" alt="SoC">SoC</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="members.html">Members</a>
+                    <a href="mailto:codecrafter.cuj@gmail.com" alt="reach us">Reach Us</a>
+                
+                </div>
+                <!-- Responsive view navigation -->
+                <div class="nav-responsive" id="myNav">
+                    <a href="/">Home</a>
+                    <a href="/SoC/" alt="SoC">SoC</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="members.html">Members</a>
+                    <a href="mailto:codecrafter.cuj@gmail.com" alt="reach us">Reach Us</a>
+                </div>
+                <div class="container" onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-main">
+            <div class="title-box add-flex">
+                <div class="title add-flex" onclick="showCards('container1')">
+                    SP@24
+                </div>
+                <div class="title add-flex" onclick="showCards('container2')">
+                    SoC@25
+                </div>
+            </div>
+  <h1>Summer Project</h1>
+           <section class="projects">
+            <ul class='slider'>
+                <li class='item' style="background-image: url('')">
+                  <div class='content'>
+                    <h2 class='title'>"Simple Programming"</h2>
+                    <p class='description'> project on Voice_Bot-Py
+                      &nbsp; 
+                      <p class="Team">
+                      Team Members:-
+                      <ul>
+                        <li>1.</li>
+                        <li>2.</li>
+                        <li>3.</li>
+                        <li>4.</li>
+                        <li>5.</li>
+                      </ul>
+                    </p> 
+                      </p>
+                      &nbsp;
+                      &nbsp;
+
+                      <button>Read More</button>
+                  </div>
+                </li>
+                <li class='item' style="background-image: url('')">
+                  <div class='content'>
+                    <h2 class='title'>"Web-Development"</h2>
+                    <p class='description'>  Restaurant website-swastik-The Taste of oneness
+                      
+                      <p class="Team">
+                        Team Members:-
+                        <ul>
+                          <li>1.</li>
+                          <li>2.</li>
+                          <li>3.</li>
+                          <li>4.</li>
+                          <li>5.</li>
+                        </ul>
+                      </p> 
+                        </p>
+                        &nbsp;
+                        &nbsp;  </p>
+                    <button>Read More</button>
+                  </div>
+                </li>
+                <li class='item' style="background-image: url('')">
+                  <div class='content'>
+                    <h2 class='title'>"programmming language with concept of DSA/SQL/DBMS"</h2>
+                    <p class='description'> Algo_Visuals
+                      <p class="Team">
+                        Team Members:-
+                        <ul>
+                          <li>1.</li>
+                          <li>2.</li>
+                          <li>3.</li>
+                          <li>4.</li>
+                          <li>5.</li>
+                        </ul>
+                      </p> 
+                        </p>
+                        &nbsp;
+                        &nbsp;
+                        </p>
+                    <button>Read More</button>
+                  </div>
+                </li>
+                <li class='item' style="background-image: url('')">
+                  <div class='content'>
+                    <h2 class='title'>"Artificial Intelligence/ Machine Learning"</h2>
+                    <p class='description'> Climate_Agri_Optimize_Predict
+
+                      <p class="Team">
+                        Team Members:-
+                        <ul>
+                          <li>1.</li>
+                          <li>2.</li>
+                          <li>3.</li>
+                          <li>4.</li>
+                          <li>5.</li>
+                        </ul>
+                      </p> 
+                        </p>
+                        &nbsp;
+                        &nbsp;</p>
+                    <button>Read More</button>
+                  </div>
+                </li>
+                <li class='item' style="background-image: url('')">
+                  <div class='content'>
+                    <h2 class='title'>"Graphics"</h2>
+                    <p class='description'>Game Story- Game control
+                      
+                      <p class="Team">
+                        Team Members:-
+                        <ul>
+                          <li>1.</li>
+                          <li>2.</li>
+                          <li>3.</li>
+                          <li>4.</li>
+                          <li>5.</li>
+                        </ul>
+                      </p> 
+                        </p>
+                        &nbsp;
+                        &nbsp;
+                      </p>
+                    <button>Read More</button>
+                  </div>
+                </li>
+                <li class='item' style="background-image: url('')">
+                  <div class='content'>
+                    <h2 class='title'>"UI/UX"</h2>
+                    <p class='description'>  Creating Unique Design
+                      
+                      
+                      <p class="Team">
+                        Team Members:-
+                        <ul>
+                          <li>1.</li>
+                          <li>2.</li>
+                          <li>3.</li>
+                          <li>4.</li>
+                          <li>5.</li>
+                        </ul>
+                      </p> 
+                        </p>
+                        &nbsp;
+                        &nbsp;  </p>
+                    <button>Read More</button>
+                  </div>
+                </li>
+              </ul>
+              <nav class='nav'>
+                <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+                <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+              </nav>  
+            </section> 
+            
+           
+            </div>
+        
+        
+    </div>
+    <canvas id="starfield"></canvas>
+    <footer style=" z-index: 1; background-color: #000000;">
+        
+        <div class="contact">
+            <div class="contact-us">
+                <div class="social-connection"><!--Section for social media connect as column grid-->
+                    <a href="https://www.linkedin.com/company/codecraftercuj/" target="_blank" class="social-link linkedin" alt="linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ccpc_cuj/" target="_blank" class="social-link instagram" alt="instagram">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/CcpC-cuj" target="_blank" class="social-link github" alt="github">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:codecrafter.cuj@gmail.com" target="_blank" alt="ccpc"> codecrafter.cuj@gmail.com</a>
+                </div>
+            </div>
+            <div class="locate">
+            <div class="University"><!--Section for University connection as column grid -->
+                <a href="https://cuj.ac.in/" target="_blank" alt="cujlogo">
+                <img src="img/cujlogo.png"></img> </a>
+            </div>
+            <div class="DCSE">
+                <a href="https://cuj.ac.in/DCSE/CS&Edepartment.php" target="_blank" alt="DCSE"> DCSE|CUJ </a>
+            </div>
+            <div class="address">
+                <p>Academic Block 1<br>Central University of Jharkhand,<br>Ranchi, Jharkhand,India - 835222</p>
+            </div>
+            </div>
+        </div>
+        <div class="footer-credit">
+            <div class="credit" >
+                Design & Developed by <a href="https://www.linkedin.com/in/krish-kumar-82a21b256" target="_blank" alt="krish"> &nbsp;&nbsp;Krish Kumar</a>&nbsp;&nbsp;& &nbsp;&nbsp;<a href="https://github.com/apurbasbjk30" target="_blank" alt="apurba"> Apurba Das</a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright"><!--Copyright section at bottom as row grid-->
+            <p>&copy; 2024 CcpC - Central University of Jharkhand</p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./public/script/script.js"></script>
+  <script src="./public/script/starfield.js"></script>
+    <script src="script_project.js"></script>
+
+</body>
+</html>
+
